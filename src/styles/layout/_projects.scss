@@ -1,0 +1,72 @@
+.projects {
+  background-color: transparent;
+  color: $text-color-light;
+  min-height: 100vh;
+  padding: 0% 1% 1%;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-top: 50px;
+
+  li {
+    padding: 0;
+  }
+}
+
+.projects-list__item {
+  border: 2px solid $text-color-dark;
+  margin-bottom: -2px;
+  margin-right: -2px;
+  min-width: 300px;
+  position: relative;
+  width: 50%;
+  height: 50vh;
+  min-height: 50vh;
+  display: block;
+
+  @include mw(768) {
+    width: 100%;
+  }
+}
+
+.project {
+  background: linear-gradient(0deg, rgba(32, 38, 51, 0.4) 0%, rgba(69, 69, 88, 0.4) 35%, rgba(56, 59, 58, 0.2) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 15px 0;
+  position: relative;
+  width: 100%;
+}
+
+.project__title {
+  font-size: calc(16px + (54 - 16) * ((100vw - 320px) / (1900 - 320)));
+  font-weight: $font-weight-bold;
+  opacity: 1;
+  text-align: center;
+  transition: all .3s;
+}
+
+.project__desc {
+  font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1900 - 320)));;
+  font-weight: $font-weight-bold;
+  opacity: 1;
+  padding: 0 2%;
+  text-align: center;
+  transition: all .3s;
+  width: 100%;
+  z-index: 10;
+}
+
+.project__links {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5px;
+  text-align: center;
+  width: 100%;
+  z-index: 10;
+}

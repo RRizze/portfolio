@@ -1,0 +1,76 @@
+.about {
+  background: transparent;
+  color: $text-color-light;
+  min-height: 100vh;
+  padding: 4% 1% 0%;
+  width: 100%;
+}
+
+.about-caption {
+  color: $text-color-dark;
+  font-size: 120px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  transition: all .3s;
+}
+
+.about-specialization {
+  font-weight: $font-weight-normal;
+}
+
+.qualification {
+  display: inline-block;
+  font-size: calc(14px + (60 - 14) * ((100vw - 300px) / (1900 - 300)));
+  margin: 20px 0 40px;
+  position: relative;
+
+  &::after {
+    animation: terminal .5s linear infinite alternate;
+    content: '_';
+    display: block;
+    height: 5px;
+    position: absolute;
+    right: -7%;
+    top: 1px;
+    width: 10%;
+  }
+}
+
+@keyframes terminal {
+  0% {
+    opacity: 0;
+  }
+
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.contact-list {
+  padding-top: 20px;
+  padding-left: 0;
+}
+
+.contact-list__item {
+    margin-top: 10px;
+}
+
+@include mw(768) {
+  .about-caption {
+    font-size: 50px;
+  }
+  
+  .spec-general {
+    font-size: 30px;
+  }
+  
+  .spec-specialization {
+    font-size: 20px;
+  }
+}

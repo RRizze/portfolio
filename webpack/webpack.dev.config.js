@@ -6,7 +6,7 @@ module.exports = merge(
   base,
   {
     devServer: {
-      port: 3000,
+      port: 3003,
       compress: true,
     },
   },

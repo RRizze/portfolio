@@ -1,5 +1,5 @@
 <head>
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="This is my portfolio site.">
   <title>RRE</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700|Roboto:400,700|Titillium+Web:400,700&display=swap"
@@ -7,118 +7,101 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
+  <canvas id="canvas"></canvas>
   <div class="container">
     <section class="about" itemscope itemtype="https://schema.org/Person">
-      <h1 class="about-caption section-caption">
-        <span itemprop="name" class="about-name">Roman R.</span><br>
+      <h1 class="about-caption section-caption" itemprop="name">
+        Roman R.
       </h1>
-      <p class="spec-general" itemprop="jobTitle">>: programmer</p>
-      <h2>
-        <span class="spec-extend">Currently specialization: front-end development.</span>
+      <p class="qualification" itemprop="jobTitle">>: programmer</p>
+      <h2 class="about-specialization">
+        <span class="text-highlight">Currently specialization:</span> front-end development.
       </h2>
       <p class="location" itemprop="homeLocation">Based in Siberia.</p>
       <ul class="contact-list" itemscope itemtype="https://schema.org/ContactPoint">
         <li class="contact-list__item">
           <a href="https://github.com/badm3t" itemprop="url">Github</a>
         </li>
+        <li class="contact-list__item">
+          <a href="https://github.com/badm3t/dotfiles" itemprop="url">Dotfiles</a>
+        </li>
         <li class="contact-list__item">Telegram: @badm3t</li>
         <li class="contact-list__item">E-mail: b4dm3t@gmail.com</li>
       </ul>
     </section>
 
-    <section class="stack">
-      <h1 class="stack-caption section-caption">Tools/Stack.</h1>
-      <div class="stack-wrap">
-        <div class="stack-front">
-          <h2 class="stack-front__caption">Front-end stack:</h2>
-          <ul class="stack-list">
-            <li class="stack-list__item">
-              JavaScript, React
-            </li>
-            <li class="stack-list__item">
-              Html, CSS/Sass
-            </li>
-            <li class="stack-list__item">
-              TypeScript
-            </li>
-            <li class="stack-list__item">
-              Webpack, Gulp
-            </li>
-            <li class="stack-list__item">
-              Docker
-            </li>
-            <li class="stack-list__item">
-              Canvas API
-            </li>
-            <li class="stack-list__item" r>
-              Node.js
-            </li>
-            <li class="stack-list__item" r>
-              Mysql/MariaDB
-            </li>
-            <li class="stack-list__item" r>
-              Jest, Enzyme
-            </li>
+    <section class="toolkit">
+      <h1 class="toolkit-caption section-caption">Tools/Stack.</h1>
+      <ul class="toolkit-list">
+        <li class="toolkit-list__item tools">
+          <h2 class="tools-caption">Front-end stack:</h2>
+          <ul class="tools-list">
+            <li class="tools-list__item">JavaScript, React, TypeScript</li>
+            <li class="tools-list__item">Html, CSS/Sass</li>
+            <li class="tools-list__item">GraphQL, Apollo</li>
+            <li class="tools-list__item">Webpack, Gulp</li>
+            <li class="tools-list__item">Docker</li>
+            <li class="tools-list__item">Canvas API</li>
+            <li class="tools-list__item">Node.js</li>
+            <li class="tools-list__item">Mysql/MariaDB</li>
+            <li class="tools-list__item">Jest, Enzyme</li>
           </ul>
-        </div>
-        <div class="stack-other">
-          <h2 class="stack-other__caption">In the process...</h2>
-          <p>Arch Linux, Lua, C, OpenGL programming</p>
-        </div>
-      </div>
-
+        </li>
+        <li class="toolkit-list__item tool">
+          <h2 class="tools-caption">General tools:</h2>
+          <ul class="tools-list">
+            <li class="tools-list__item">Arch Linux</li>
+            <li class="tools-list__item">Bash</li>
+            <li class="tools-list__item">dnb</li>
+            <li class="tools-list__item">Googling</li>
+          </ul>
+        </li>
+      </ul>
     </section>
     <section class="projects" itemscope="" itemtype="http://schema.org/ItemList https://schema.org/CreativeWork">
       <h1 class="projects-caption section-caption" itemprop="name">Code Labs.</h1>
       <ul class="projects-list">
         <li class="projects-list__item">
           <div class="project">
-            <div class="project__content">
-              <div class="project__img project__img--ytd"></div>
-              <div class="project__img--cover"></div>
-              <div class="project__desc">
-                <p>This is a new Wiki of a tower defence game - YouTD, the map in Warcraft 3 TFT.</p>
-              </div>
-              <div class="project-links">
-                <a class="project__link" href="">Live</a>
-                <a class="project__link" href="">Github</a>
-              </div>
+            <h2 class="project__title">YouTD</h2>
+            <div class="project__desc">
+              <p>
+                This is a new knowledge base of YouTD - the tower defence game and the map in Warcraft 3 TFT. This project was written with using Typescript, Mariadb, GraphQL, Node.js. It contains an information about towers, items etc. Added new search filters and updated some abilities. 
+              </p>
             </div>
-            <p class="project__title">YouTD</p>
+            <div class="project__links">
+              <a class="project__link" href="https://youtd.sensurri.site">Live</a>
+              <a class="project__link" href="https://github.com/badm3t/ytd-client">Github</a>
+            </div>
           </div>
         </li>
         <li class="projects-list__item">
           <div class="project">
-            <div class="project__content">
-              <!-- <div class="project__img"></div> -->
-              <div class="project__img--cover"></div>
+              <h2 class="project__title">YouTD Game</h2>
               <div class="project__desc">
-                <p>This is YouTD - a tower defence game, written in C, Lua and C++.</p>
+                <p>
+                  This is YouTD - a tower defence game, written in C, Lua and C++.
+                </p>
               </div>
-              <div class="project-links">
+              <div class="project__links">
                 <p>Not available yet...</p>
               </div>
             </div>
-            <p class="project__title">YouTD Game</p>
-          </div>
         </li>
         <li class="projects-list__item">
           <div class="project">
-            <div class="project__content">
-              <div class="project__img project__img--portfolio"></div>
-              <div class="project__img--cover"></div>
-              <div class="project__desc">
-                <p>This is my portfolio website.</p>
-              </div>
-              <div class="project-links">
-                <a class="project__link" href="">Live</a>
-                <a class="project__link" href="">Github</a>
-              </div>
+            <h2 class="project__title">Portfolio</h2>
+            <div class="project__desc">
+              <p>This is my simple portfolio website.</p>
             </div>
-            <p class="project__title">Portfolio</p>
+            <div class="project__links">
+              <a class="project__link" href="#">Live</a>
+              <a class="project__link" href="https://github.com/badm3t/portfolio">Github</a>
+            </div>
           </div>
         </li>
       </ul>
     </section>
+    <footer class="footer"><p>© Made by R. 2019</p></footer>
   </div>
 </body>

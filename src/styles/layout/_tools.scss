@@ -1,0 +1,36 @@
+.toolkit {
+  min-height: 100vh;
+  padding: 4% 1% 0%;
+  
+  @include mw(540) {
+    text-align: center;
+  }
+}
+
+.toolkit-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 3%;
+}
+
+.toolkit-list__item {
+  padding-top: 2%;
+  width: 50%;
+  @include mw(540) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.toolkit-list {
+  font-weight: $font-weight-bold;
+  padding-left: 1%;
+}
+
+.tools-caption {
+  border-bottom: 4px solid $text-color-light;
+  display: inline-block;
+  font-weight: $font-weight-normal;
+  margin-bottom: 10px;
+}
